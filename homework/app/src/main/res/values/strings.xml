@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">homework</string>
+    <string name="state">login in</string>
+    <string name="UserName">Unknown</string>
+    <string name="Password">Unknown</string>
     <string name="shop1_name">Rose</string>
     <string name="shop2_name">Freesia</string>
     <string name="shop3_name">Lily</string>
