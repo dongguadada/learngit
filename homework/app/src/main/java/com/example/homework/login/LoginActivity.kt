@@ -3,22 +3,29 @@ package com.example.homework.login
 
 import android.content.Context
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.method.HideReturnsTransformationMethod
 import android.text.method.PasswordTransformationMethod
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import com.example.homework.R
-import com.example.homework.data.ToolUtils
+import com.example.homework.m.ToolUtils
 import com.example.homework.databinding.ActivityLoginBinding
+import com.example.homework.m.RegistResultContract
 import com.example.homework.sign.SignActivity
-
 
 
 class LoginActivity : AppCompatActivity() {
     var shpsd = true
 
     private lateinit var binding:ActivityLoginBinding
+
+    private val ActivityResultFromRegist = registerForActivityResult(RegistResultContract()){ result ->
+        Toast.makeText(applicationContext,result.toString(),Toast.LENGTH_SHORT).show()
+        if (result == 1){
+            finish()
+        }
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -32,22 +39,21 @@ class LoginActivity : AppCompatActivity() {
         val SignUp = binding.SignUp
         val LoginIn = binding.loginIn
         SignUp.setOnClickListener {
-            val intent = Intent(this,SignActivity::class.java)
-            startActivity(intent)
+            ActivityResultFromRegist.launch(1)
         }
         //显示密码
         SHpassword.setOnClickListener {
-            if (shpsd){
+            shpsd = if (shpsd){
                 SHpassword.setImageResource(R.drawable.disshowpassword)
                 LoginPasssword.setTransformationMethod(HideReturnsTransformationMethod.getInstance())
-                shpsd = false
-            }
-            else{
+                false
+            } else{
                 SHpassword.setImageResource(R.drawable.showpassword)
                 LoginPasssword.setTransformationMethod(PasswordTransformationMethod.getInstance())
-                shpsd = true
+                true
             }
         }
+        //登入
         LoginIn.setOnClickListener {
             System.out.println(ToolUtils.getWindowHeigh(this))
             System.out.println(LoginPasssword.text)

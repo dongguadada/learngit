@@ -12,56 +12,51 @@ fun shopList(resources: Resources): List<Shop>{
         ),
         Shop(
             id = 2,
-            name = resources.getString(R.string.shop2_name),
+            name = resources.getString(R.string.shop1_name),
             image = R.drawable.rose
         ),
         Shop(
             id = 3,
-            name = resources.getString(R.string.shop3_name),
+            name = resources.getString(R.string.shop1_name),
             image = R.drawable.rose
         ),
         Shop(
             id = 4,
-            name = resources.getString(R.string.shop4_name),
+            name = resources.getString(R.string.shop1_name),
             image = R.drawable.rose
         ),
         Shop(
             id = 5,
-            name = resources.getString(R.string.shop5_name),
+            name = resources.getString(R.string.shop1_name),
             image = R.drawable.rose
         ),
         Shop(
             id = 6,
-            name = resources.getString(R.string.shop6_name),
+            name = resources.getString(R.string.shop1_name),
             image = R.drawable.rose
         ),
         Shop(
             id = 7,
-            name = resources.getString(R.string.shop7_name),
+            name = resources.getString(R.string.shop1_name),
             image = R.drawable.rose
         ),
         Shop(
             id = 8,
-            name = resources.getString(R.string.shop8_name),
+            name = resources.getString(R.string.shop1_name),
             image = R.drawable.rose
         ),
         Shop(
             id = 9,
-            name = resources.getString(R.string.shop9_name),
+            name = resources.getString(R.string.shop1_name),
             image = R.drawable.rose
         ),
         Shop(
             id = 10,
-            name = resources.getString(R.string.shop10_name),
+            name = resources.getString(R.string.shop1_name),
             image = R.drawable.rose
         ),
         Shop(
             id = 11,
-            name = resources.getString(R.string.shop11_name),
-            image = R.drawable.rose
-        ),
-        Shop(
-            id = 12,
             name = resources.getString(R.string.shop1_name),
             image = R.drawable.rose
         ),
@@ -70,60 +65,5 @@ fun shopList(resources: Resources): List<Shop>{
             name = resources.getString(R.string.shop1_name),
             image = R.drawable.rose
         ),
-        Shop(
-            id = 12,
-            name = resources.getString(R.string.shop1_name),
-            image = R.drawable.rose
-        ),
-        Shop(
-            id = 12,
-            name = resources.getString(R.string.shop1_name),
-            image = R.drawable.rose
-        ),
-        Shop(
-            id = 12,
-            name = resources.getString(R.string.shop1_name),
-            image = R.drawable.rose
-        ),
-        Shop(
-            id = 12,
-            name = resources.getString(R.string.shop1_name),
-            image = R.drawable.rose
-        ),
-        Shop(
-            id = 12,
-            name = resources.getString(R.string.shop1_name),
-            image = R.drawable.rose
-        ),
-        Shop(
-            id = 12,
-            name = resources.getString(R.string.shop1_name),
-            image = R.drawable.rose
-        ),
-        Shop(
-            id = 12,
-            name = resources.getString(R.string.shop1_name),
-            image = R.drawable.rose
-        ),
-        Shop(
-            id = 12,
-            name = resources.getString(R.string.shop1_name),
-            image = R.drawable.rose
-        ),
-        Shop(
-            id = 12,
-            name = resources.getString(R.string.shop1_name),
-            image = R.drawable.rose
-        ),
-        Shop(
-            id = 12,
-            name = resources.getString(R.string.shop1_name),
-            image = R.drawable.rose
-        ),
-        Shop(
-            id = 12,
-            name = resources.getString(R.string.shop1_name),
-            image = R.drawable.rose
-        )
     )
 }

@@ -6,55 +6,89 @@
     android:layout_height="match_parent"
     tools:context=".shoplist.MainActivity"
     android:orientation="vertical">
-    <!-- 头部 -->
     <LinearLayout
-        android:id="@+id/test"
+        android:id="@+id/showHomePage"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_weight="15"
         android:orientation="vertical">
-        <!--        位置和购物车-->
+        <!-- 头部 -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1">
-            <TextView
-                android:id="@+id/location"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"/>
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:src="@drawable/rose"/>
-        </LinearLayout>
-        <!--        搜索-->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1">
-            <EditText
-                android:id="@+id/search"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"/>
-            <Button
-                android:id="@+id/search_btn"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="搜索"/>
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <!--        位置和购物车-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/location"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/rose"/>
+            </LinearLayout>
+            <!--        搜索-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <EditText
+                    android:id="@+id/search"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+                <Button
+                    android:id="@+id/search_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="搜索"/>
 
+            </LinearLayout>
         </LinearLayout>
+        <!-- 滑动部分 -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
     </LinearLayout>
-    <!-- 滑动部分 -->
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recycler_view"
+    <!-- 订单 -->
+    <LinearLayout
+        android:id="@+id/showIndent"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="10"
-        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+        android:layout_weight="15"
+        android:visibility="gone"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="订单待开发"/>
+
+    </LinearLayout>
+    <!-- 我的 -->
+    <LinearLayout
+        android:id="@+id/showMy"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="15"
+        android:visibility="gone"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="我的待开发"/>
+
+    </LinearLayout>
     <!-- 底部 -->
     <LinearLayout
         android:layout_width="match_parent"
@@ -81,5 +115,6 @@
             android:text="我的"/>
 
     </LinearLayout>
+
 
 </LinearLayout>

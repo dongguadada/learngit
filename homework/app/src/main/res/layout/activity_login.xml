@@ -20,12 +20,13 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="5"
-            android:background="@null"
+            android:background="@color/grey"
             android:hint="请输入账号"
             android:maxLength="16"
             android:inputType="number|phone"/>
-        
     </LinearLayout>
+
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -41,8 +42,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="4"
-            android:layout_toLeftOf="@+id/hspass"
-            android:background="@null"
+            android:background="@color/grey"
             android:hint="请输入密码"
             android:maxLength="16"
             android:inputType="textPassword" />
@@ -51,6 +51,7 @@
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="match_parent"
+            android:background="@color/grey"
             android:src="@drawable/showpassword"/>
 
     </LinearLayout>

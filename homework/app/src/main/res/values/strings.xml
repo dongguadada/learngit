@@ -4,15 +4,4 @@
     <string name="UserName">Unknown</string>
     <string name="Password">Unknown</string>
     <string name="shop1_name">Rose</string>
-    <string name="shop2_name">Freesia</string>
-    <string name="shop3_name">Lily</string>
-    <string name="shop4_name">Sunflower</string>
-    <string name="shop5_name">Peony</string>
-    <string name="shop6_name">Daisy</string>
-    <string name="shop7_name">Lilac</string>
-    <string name="shop8_name">Marigold</string>
-    <string name="shop9_name">Poppy</string>
-    <string name="shop10_name">Daffodil</string>
-    <string name="shop11_name">Dahlia</string>
-    <string name="shop12_name">Tulip</string>
 </resources>

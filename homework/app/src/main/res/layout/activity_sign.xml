@@ -65,5 +65,10 @@
             android:inputType="textPassword"/>
 
     </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/regist"
+        android:text="注册"/>
 
 </LinearLayout>
